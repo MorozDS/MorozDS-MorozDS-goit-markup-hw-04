@@ -176,7 +176,8 @@ color: var(--action-color);
 
 
 .contact-items:hover .icon-contact,
-.contact-items:hover .icon-contact {
+.site-contact a:focus .icon-contact
+ {
   fill: var(--action-color);
 }
 
@@ -425,7 +426,7 @@ margin-right: 10px;
 }
 
 .social-link:hover .comand-icon,  
-.comand-icon:focus .comand-icon {
+.social-link:focus .comand-icon {
   fill: white;
   
 }
@@ -459,10 +460,22 @@ margin-bottom: 50px;
 
 }
 
-.clients-content:hover .clients-icon, 
-.clients-content:focus .clients-icon {
+ .link-clients:hover .clients-icon, 
+.link-clients:focus .clients-icon {
+  fill: var(--action-color);
+} 
+
+.clients-content:focus,
+.clients-content:hover {
+  border-color: var(--action-color);
+} 
+
+.clients-content:focus .link-clients,
+.clients-content:hover .link-clients{
   fill: var(--action-color);
 }
+
+
 
 
 .clients-block {
@@ -623,7 +636,7 @@ background-color:  #F5F4FA;
  }
 
 
-.btn-portfolio:hover, .btn-porfolio:focus { outline: none;
+.btn-portfolio:hover, .btn-portfolio:focus { outline: none;
   color: #FFFFFF;
   background-color: var(--action-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08);
@@ -673,3 +686,6 @@ letter-spacing: 0.03em;
  
 }
 
+.portfolio-content:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
