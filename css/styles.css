@@ -460,10 +460,10 @@ margin-bottom: 50px;
 
 }
 
- .link-clients:hover .clients-icon, 
+  .link-clients:hover .clients-icon, 
 .link-clients:focus .clients-icon {
   fill: var(--action-color);
-} 
+}  
 
 /* .clients-content:focus,
 .clients-content:hover {
