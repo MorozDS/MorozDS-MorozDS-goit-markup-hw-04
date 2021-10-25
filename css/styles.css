@@ -465,14 +465,15 @@ margin-bottom: 50px;
   fill: var(--action-color);
 } 
 
-.clients-content:focus,
+/* .clients-content:focus,
 .clients-content:hover {
   border-color: var(--action-color);
-} 
+}  */
 
 .clients-content:focus .link-clients,
 .clients-content:hover .link-clients{
   fill: var(--action-color);
+   border-color: var(--action-color);
 }
 
 
@@ -484,7 +485,20 @@ margin-bottom: 50px;
   justify-content: center;
 }
 
-.clients-content {
+ .clients-content {
+  /* height: 92px;
+  width: 170px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center; */
+  margin-right: 30px;
+}
+.clients-content:last-child {margin-right: 0px;} 
+
+
+ .link-clients {
   height: 92px;
   width: 170px;
   border: 1px solid #AFB1B8;
@@ -494,7 +508,7 @@ margin-bottom: 50px;
   justify-content: center;
   margin-right: 30px;
 }
-.clients-content:last-child {margin-right: 0px;}
+.link-clients:last-child {margin-right: 0px;} 
 
 
 /* ---------------Футер ------------------------*/
